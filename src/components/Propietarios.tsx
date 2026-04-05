@@ -40,7 +40,7 @@ export function Propietarios() {
             <span className="text-[13px] font-semibold uppercase tracking-widest text-primary">
               Para propietarios
             </span>
-            <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl leading-[1.1]">
+            <h2 className="mt-4 text-[2.5rem] font-extrabold tracking-tight text-foreground md:text-[3rem] leading-[1.1]">
               Nosotros pagamos.
               <br />
               <span className="font-display italic text-muted-foreground">Tú descansas.</span>

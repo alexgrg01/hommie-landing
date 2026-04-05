@@ -44,7 +44,7 @@ export function HowItWorks() {
             <span className="text-[13px] font-semibold uppercase tracking-widest text-primary">
               Proceso
             </span>
-            <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl">
+            <h2 className="mt-4 text-[2.5rem] font-extrabold tracking-tight text-foreground md:text-[3rem]">
               Cómo{" "}
               <span className="font-display italic text-primary">funciona</span>
             </h2>
@@ -69,7 +69,7 @@ export function HowItWorks() {
                   className="group relative flex gap-6"
                 >
                   {/* Icon node on the line */}
-                  <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-muted text-muted-foreground ring-4 ring-background transition-colors group-hover:bg-primary group-hover:text-white">
+                  <div className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/[0.07] text-primary ring-4 ring-background transition-colors group-hover:bg-primary group-hover:text-white">
                     <step.icon className="h-5 w-5" />
                   </div>
 
@@ -82,7 +82,7 @@ export function HowItWorks() {
                         {step.num}
                       </span>
                     </div>
-                    <h3 className="text-xl font-bold text-foreground">
+                    <h3 className="text-[15px] font-bold text-foreground">
                       {step.title}
                     </h3>
                     <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground max-w-md">

@@ -81,7 +81,7 @@ export function Waitlist() {
             <button
               type="submit"
               disabled={state === "loading"}
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-indigo-600 px-6 text-sm font-semibold text-white shadow-lg shadow-indigo-600/25 transition-all hover:bg-indigo-500 hover:shadow-xl hover:shadow-indigo-500/30 active:scale-[0.97] disabled:opacity-60"
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-indigo-600 px-6 text-sm font-semibold text-white shadow-lg shadow-indigo-600/25 transition-all hover:bg-indigo-500 hover:shadow-xl hover:shadow-indigo-600/30 active:scale-[0.97] disabled:opacity-60"
             >
               {state === "loading" ? (
                 <Loader2 className="h-4 w-4 animate-spin" />

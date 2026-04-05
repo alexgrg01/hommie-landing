@@ -9,7 +9,7 @@ const metrics = [
 
 export function MetricsBanner() {
   return (
-    <section id="metricas" className="py-16 px-6 border-b border-border">
+    <section id="metricas" className="py-20 px-6 border-b border-border">
       <h2 className="sr-only">Hommie en números</h2>
       <motion.div
         className="mx-auto max-w-6xl grid grid-cols-2 gap-8 lg:grid-cols-4"

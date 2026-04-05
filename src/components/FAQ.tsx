@@ -46,7 +46,7 @@ function FAQItem({ faq, index }: { faq: typeof faqs[0]; index: number }) {
         className="flex w-full items-center justify-between py-5 text-left transition-colors hover:text-primary"
         aria-expanded={open}
       >
-        <span className="text-[15px] font-semibold text-foreground pr-8">
+        <span className="text-[15px] font-normal text-foreground pr-8">
           {faq.q}
         </span>
         <ChevronDown
@@ -113,7 +113,7 @@ export function FAQ() {
             <span className="text-[13px] font-semibold uppercase tracking-widest text-primary">
               FAQ
             </span>
-            <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl">
+            <h2 className="mt-4 text-[2.5rem] font-extrabold tracking-tight text-foreground md:text-[3rem]">
               Preguntas{" "}
               <span className="font-display italic text-muted-foreground">
                 frecuentes
