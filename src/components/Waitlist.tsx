@@ -1,8 +1,7 @@
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
-// TODO: reemplazar con la URL real del Google Form
-const GOOGLE_FORM_URL = "#"
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScZvws9v1k4-INV7Im-3yfQeOkkohJPd2eUK-jesIYxcDvgHg/viewform?usp=dialog"
 
 export function Waitlist() {
   return (

@@ -14,10 +14,10 @@ export function Footer() {
           </div>
 
           <div className="flex flex-wrap items-center gap-6 text-[13px] text-muted-foreground">
-            <a href="#" className="transition-colors hover:text-foreground">
-              Legal
+            <a href="/legal.html" className="transition-colors hover:text-foreground">
+              Aviso legal
             </a>
-            <a href="#" className="transition-colors hover:text-foreground">
+            <a href="/privacidad.html" className="transition-colors hover:text-foreground">
               Privacidad
             </a>
             <a
