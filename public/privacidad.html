@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidad — Encaja</title>
+    <meta name="description" content="Política de Privacidad de Encaja, conforme al Reglamento (UE) 2016/679 (RGPD) y la LOPDGDD." />
+    <link rel="canonical" href="https://encaja.es/privacidad.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #FAFAF8;
+        --fg: #1A1B23;
+        --muted: #5C5F70;
+        --border: #E8E5E0;
+        --primary: #4F46E5;
+        --card: #FFFFFF;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+      .nav {
+        position: sticky;
+        top: 0;
+        background: rgba(250, 250, 248, 0.85);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+        z-index: 10;
+      }
+      .nav-inner {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: var(--fg);
+        text-decoration: none;
+        letter-spacing: -0.02em;
+      }
+      .brand-dot { color: var(--primary); }
+      .back-link {
+        font-size: 13px;
+        color: var(--muted);
+        text-decoration: none;
+        transition: color 0.15s;
+      }
+      .back-link:hover { color: var(--fg); }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 64px 24px 96px;
+      }
+      .label {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--primary);
+      }
+      h1 {
+        font-size: clamp(2rem, 5vw, 2.75rem);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        margin: 12px 0 8px;
+      }
+      h1 em {
+        font-family: 'Instrument Serif', serif;
+        font-style: italic;
+        font-weight: 400;
+        color: var(--muted);
+      }
+      .updated {
+        font-size: 14px;
+        color: var(--muted);
+        margin-bottom: 48px;
+      }
+      h2 {
+        font-size: 1.35rem;
+        font-weight: 700;
+        margin: 48px 0 16px;
+        letter-spacing: -0.01em;
+      }
+      h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 28px 0 8px;
+      }
+      p, li {
+        font-size: 15.5px;
+        color: #2A2C36;
+      }
+      p { margin-bottom: 14px; }
+      ul, ol { padding-left: 24px; margin-bottom: 14px; }
+      li { margin-bottom: 6px; }
+      a { color: var(--primary); text-decoration: underline; text-underline-offset: 2px; }
+      a:hover { text-decoration: none; }
+      .placeholder {
+        background: #FFF6E5;
+        border: 1px dashed #C5A572;
+        color: #7A5C20;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-family: ui-monospace, 'SF Mono', monospace;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .data-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin: 16px 0 24px;
+      }
+      .data-card dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 24px; }
+      .data-card dt { font-size: 13px; color: var(--muted); font-weight: 600; }
+      .data-card dd { font-size: 14.5px; color: var(--fg); }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+        font-size: 14.5px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      th, td {
+        text-align: left;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--border);
+      }
+      th {
+        background: #F4F2EE;
+        font-weight: 600;
+        font-size: 13px;
+      }
+      tr:last-child td { border-bottom: none; }
+      footer {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 32px 24px 64px;
+        font-size: 13px;
+        color: var(--muted);
+        border-top: 1px solid var(--border);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      footer a { color: var(--muted); text-decoration: none; }
+      footer a:hover { color: var(--fg); }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="/">Encaja<span class="brand-dot">.</span></a>
+        <a class="back-link" href="/">← Volver al inicio</a>
+      </div>
+    </nav>
+
+    <main>
+      <span class="label">Información legal</span>
+      <h1>Política de <em>Privacidad</em></h1>
+      <p class="updated">Última actualización: 26 de abril de 2026</p>
+
+      <p>
+        En Encaja nos tomamos en serio la protección de tus datos personales. Esta política explica
+        qué información recogemos, con qué finalidad, durante cuánto tiempo y qué derechos tienes,
+        de acuerdo con el Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre,
+        de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).
+      </p>
+
+      <h2>1. Responsable del tratamiento</h2>
+      <div class="data-card">
+        <dl>
+          <dt>Responsable</dt>
+          <dd><span class="placeholder">[[ RAZÓN SOCIAL O NOMBRE COMPLETO ]]</span></dd>
+          <dt>NIF / CIF</dt>
+          <dd><span class="placeholder">[[ NIF/CIF ]]</span></dd>
+          <dt>Domicilio</dt>
+          <dd><span class="placeholder">[[ DIRECCIÓN COMPLETA, CP, MUNICIPIO, PROVINCIA ]]</span></dd>
+          <dt>Email de contacto</dt>
+          <dd><a href="mailto:hola@encaja.es">hola@encaja.es</a></dd>
+          <dt>Delegado de Protección de Datos</dt>
+          <dd>No designado (no concurren los supuestos del art. 37 RGPD).</dd>
+        </dl>
+      </div>
+
+      <h2>2. Datos que recogemos</h2>
+      <p>Encaja trata únicamente los datos personales que tú nos facilitas voluntariamente a través de:</p>
+      <h3>2.1. Formulario de lista de espera (Google Forms)</h3>
+      <p>
+        Al inscribirte en la lista de espera previa al lanzamiento, podemos recoger los siguientes
+        datos, dependiendo del perfil seleccionado (propietario o inquilino):
+      </p>
+      <ul>
+        <li><strong>Datos de contacto:</strong> nombre, apellidos y dirección de correo electrónico.</li>
+        <li><strong>Perfil:</strong> rol (propietario o inquilino), ciudad o zona de interés.</li>
+        <li><strong>Información adicional voluntaria:</strong> número aproximado de propiedades, tipo de inmueble, presupuesto orientativo, fecha estimada de mudanza, comentarios libres.</li>
+      </ul>
+      <p>Ningún campo del formulario solicita categorías especiales de datos (art. 9 RGPD).</p>
+
+      <h3>2.2. Comunicaciones por email</h3>
+      <p>
+        Si nos escribes a <a href="mailto:hola@encaja.es">hola@encaja.es</a>, trataremos los datos
+        que voluntariamente nos facilites en tu mensaje con la única finalidad de atender tu consulta.
+      </p>
+
+      <h3>2.3. Datos de navegación</h3>
+      <p>
+        El Sitio Web no instala cookies propias ni utiliza herramientas de analítica o marketing
+        que requieran tu consentimiento. La carga de tipografías de Google Fonts y de imágenes de
+        Unsplash supone la comunicación de tu dirección IP al proveedor correspondiente; ver el
+        apartado «Destinatarios».
+      </p>
+
+      <h2>3. Finalidad del tratamiento</h2>
+      <ul>
+        <li>Mantener actualizada la lista de espera y comunicarte el lanzamiento del servicio en tu zona.</li>
+        <li>Enviarte información puntual sobre el desarrollo del producto, novedades relevantes y, en su caso, condiciones de acceso preferente.</li>
+        <li>Atender consultas, solicitudes y ejercicio de derechos.</li>
+        <li>Cumplir con las obligaciones legales aplicables.</li>
+      </ul>
+      <p>
+        No utilizamos tus datos para tomar decisiones automatizadas ni para elaboración de perfiles
+        con efectos jurídicos significativos.
+      </p>
+
+      <h2>4. Base jurídica</h2>
+      <p>
+        La base legal del tratamiento es tu <strong>consentimiento</strong>, prestado al rellenar
+        y enviar el formulario de lista de espera (art. 6.1.a RGPD). Puedes retirar el consentimiento
+        en cualquier momento, sin que ello afecte a la licitud del tratamiento previo a su retirada.
+      </p>
+      <p>
+        Para la atención de consultas la base es la ejecución de medidas precontractuales a tu
+        solicitud (art. 6.1.b RGPD).
+      </p>
+
+      <h2>5. Plazo de conservación</h2>
+      <p>
+        Conservaremos tus datos mientras se mantenga tu consentimiento y, en su defecto, hasta que
+        transcurran <strong>veinticuatro (24) meses</strong> desde el lanzamiento del servicio en tu
+        zona o hasta que solicites su supresión. Una vez finalizado el tratamiento, los datos se
+        bloquearán durante los plazos legalmente exigibles para atender posibles responsabilidades.
+      </p>
+
+      <h2>6. Destinatarios y encargados del tratamiento</h2>
+      <p>
+        Solo compartimos tus datos con prestadores de servicios estrictamente necesarios para operar
+        el Sitio Web y la lista de espera, todos ellos con acuerdos de tratamiento de datos y
+        garantías adecuadas:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Proveedor</th>
+            <th>Finalidad</th>
+            <th>País</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google Ireland Ltd. (Google Forms)</td>
+            <td>Recogida y almacenamiento del formulario de lista de espera.</td>
+            <td>Irlanda / EE.UU.</td>
+          </tr>
+          <tr>
+            <td>Google Ireland Ltd. (Google Fonts)</td>
+            <td>Servicio de tipografías web.</td>
+            <td>Irlanda / EE.UU.</td>
+          </tr>
+          <tr>
+            <td>Unsplash Inc.</td>
+            <td>Servicio de imágenes ilustrativas embebidas en el Sitio Web.</td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <td><span class="placeholder">[[ HOSTING — p. ej. Vercel, Netlify ]]</span></td>
+            <td>Alojamiento y servidor web.</td>
+            <td><span class="placeholder">[[ PAÍS DEL HOSTING ]]</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        No realizamos ninguna otra cesión de datos a terceros, salvo obligación legal.
+      </p>
+
+      <h2>7. Transferencias internacionales</h2>
+      <p>
+        Los servicios de Google y Unsplash pueden suponer transferencias internacionales de datos a
+        Estados Unidos. Estas transferencias están amparadas por el <strong>Marco de Privacidad de
+        Datos UE-EE.UU. (EU-US Data Privacy Framework)</strong>, en virtud de la Decisión de
+        Adecuación de la Comisión Europea de 10 de julio de 2023, y/o por las Cláusulas Contractuales
+        Tipo aprobadas por la Comisión Europea, lo que garantiza un nivel de protección equivalente
+        al exigido por la normativa europea.
+      </p>
+
+      <h2>8. Tus derechos</h2>
+      <p>
+        Como interesado, puedes ejercer en cualquier momento los siguientes derechos sobre tus datos:
+      </p>
+      <ul>
+        <li><strong>Acceso:</strong> conocer qué datos tratamos sobre ti.</li>
+        <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos.</li>
+        <li><strong>Supresión:</strong> solicitar la eliminación cuando ya no sean necesarios.</li>
+        <li><strong>Oposición:</strong> oponerte al tratamiento por motivos relacionados con tu situación particular.</li>
+        <li><strong>Limitación:</strong> solicitar que se limite el tratamiento en los supuestos previstos.</li>
+        <li><strong>Portabilidad:</strong> recibir tus datos en formato estructurado y de uso común.</li>
+        <li><strong>Retirada del consentimiento</strong> en cualquier momento.</li>
+        <li><strong>No ser objeto de decisiones individuales automatizadas</strong> con efectos jurídicos.</li>
+      </ul>
+
+      <h2>9. Cómo ejercer tus derechos</h2>
+      <p>
+        Puedes ejercer cualquiera de los derechos anteriores enviando un correo a
+        <a href="mailto:hola@encaja.es">hola@encaja.es</a> con la referencia «Protección de Datos»,
+        adjuntando una copia de tu DNI o documento equivalente que acredite tu identidad. Atenderemos
+        tu solicitud en el plazo máximo de un (1) mes, prorrogable por dos (2) meses adicionales en
+        casos de especial complejidad.
+      </p>
+
+      <h2>10. Reclamación ante la autoridad de control</h2>
+      <p>
+        Si consideras que el tratamiento de tus datos no es conforme a la normativa, tienes derecho
+        a presentar una reclamación ante la Agencia Española de Protección de Datos:
+        <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a> ·
+        C/ Jorge Juan, 6 · 28001 Madrid.
+      </p>
+
+      <h2>11. Cookies</h2>
+      <p>
+        El Sitio Web no instala cookies propias ni de terceros que requieran tu consentimiento conforme
+        al art. 22.2 LSSI-CE. Solo se utilizan, en su caso, cookies estrictamente técnicas necesarias
+        para el funcionamiento básico del Sitio Web.
+      </p>
+
+      <h2>12. Seguridad</h2>
+      <p>
+        Aplicamos medidas técnicas y organizativas apropiadas para garantizar la confidencialidad,
+        integridad y disponibilidad de los datos personales, evitando el acceso no autorizado, la
+        pérdida o la alteración. La transmisión de datos a través del formulario se realiza sobre
+        canales cifrados (HTTPS / TLS).
+      </p>
+
+      <h2>13. Modificaciones</h2>
+      <p>
+        Encaja se reserva el derecho a modificar esta política para adaptarla a novedades legislativas
+        o jurisprudenciales, así como a cambios en sus prácticas. La versión vigente será siempre la
+        publicada en esta página, con su correspondiente fecha de actualización.
+      </p>
+    </main>
+
+    <footer>
+      <span>© 2026 Encaja. Todos los derechos reservados.</span>
+      <span>
+        <a href="/">Inicio</a> · <a href="/legal.html">Aviso Legal</a>
+      </span>
+    </footer>
+  </body>
+</html>
