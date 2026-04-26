@@ -10,19 +10,23 @@ const faqs = [
   },
   {
     q: "¿Cómo funciona el seguro de impago?",
-    a: "Hommie ofrece un seguro de impago como producto separado, respaldado por aseguradoras especializadas. Nuestro scoring financiero previo reduce la siniestralidad, lo que nos permite negociar primas más competitivas que las que conseguirías por tu cuenta. El propietario lo contrata directamente desde la plataforma.",
+    a: "El seguro de impago es un producto separado que el propietario contrata desde la plataforma, respaldado por aseguradoras especializadas. Nuestro scoring financiero previo reduce la siniestralidad, lo que nos permite negociar primas más competitivas que las que conseguirías por tu cuenta.",
   },
   {
-    q: "¿Cuánto cuesta Hommie?",
-    a: "Para inquilinos, buscar, aplicar y hacer matching es gratis. Sin comisiones de agencia. Opcionalmente puedes acceder a funciones premium como prioridad en el matching o verificación express. Para propietarios, cobramos un fee de gestión sobre el alquiler mensual que incluye cobros, contratos, soporte e incidencias. El seguro de impago se contrata aparte.",
+    q: "¿Cuánto cuesta Encaja?",
+    a: "Para inquilinos, buscar, aplicar y hacer matching es gratis. Sin comisiones de agencia. Para propietarios, cobramos un fee de gestión desde el 12% sobre el alquiler mensual que incluye cobros, contratos, soporte, incidencias y matching por IA. El seguro de impago se contrata aparte como producto separado.",
+  },
+  {
+    q: "¿Por qué pagar un fee si puedo gestionar el piso por mi cuenta?",
+    a: "Una gestora tradicional cobra entre 8 y 12% solo por gestión administrativa. Encaja incluye en ese mismo rango la automatización completa (cobros, contratos, incidencias), el matching por IA que reduce conflictos de convivencia y el acceso a primas de seguro negociadas. Lo que pierdes en margen, lo ganas en ocupación, ausencia de morosidad y cero horas de gestión.",
   },
   {
     q: "¿Qué son los hitos verificados?",
-    a: "En lugar de reviews subjetivas tipo 5 estrellas, Hommie usa badges automáticos basados en datos reales: 'Identidad Verificada', 'Nómina Validada', '6 meses de pagos a tiempo'. Esto genera confianza sin depender de opiniones que suelen estar sesgadas.",
+    a: "En lugar de reviews subjetivas tipo 5 estrellas, Encaja usa badges automáticos basados en datos reales: 'Identidad Verificada', 'Nómina Validada', '6 meses de pagos a tiempo'. Esto genera confianza sin depender de opiniones que suelen estar sesgadas.",
   },
   {
     q: "¿Cómo sustituís las visitas presenciales?",
-    a: "Los candidatos crean una video-presentación de 30 segundos (estilo TikTok) en su perfil. Los que pasan el pre-filtro financiero pueden agendar videollamadas de 10 minutos con los compañeros actuales del piso. Sin visitas presenciales, sin chats interminables por WhatsApp.",
+    a: "Los candidatos crean una video-presentación de 30 segundos (estilo TikTok) en su perfil. Los que pasan el pre-filtro financiero pueden agendar videollamadas de 10 minutos con los compañeros actuales del piso (no con el propietario). Sin visitas presenciales, sin chats interminables por WhatsApp.",
   },
   {
     q: "¿En qué ciudades operáis?",
@@ -120,7 +124,7 @@ export function FAQ() {
               </span>
             </h2>
             <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-              Todo lo que necesitas saber sobre Hommie antes de unirte.
+              Todo lo que necesitas saber sobre Encaja antes de unirte.
             </p>
           </motion.div>
 

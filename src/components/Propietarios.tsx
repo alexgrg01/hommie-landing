@@ -5,18 +5,18 @@ const features = [
   {
     icon: Banknote,
     title: "Gestión automatizada",
-    description: "Cobros recurrentes, contratos digitales, incidencias y soporte — todo gestionado por Hommie por un fee sobre el alquiler.",
+    description: "Cobros recurrentes, contratos digitales, incidencias y soporte — todo gestionado por Encaja desde un 12% sobre el alquiler mensual.",
   },
   {
     icon: ShieldCheck,
     title: "Seguro de impago",
-    description: "Protección real contra impagos. Contratación directa desde la plataforma con primas reducidas gracias a nuestro scoring previo.",
+    description: "Producto separado contratable desde la plataforma. Nuestro scoring previo reduce la siniestralidad, lo que nos permite negociar primas que no conseguirías solo.",
     badge: "Producto separado",
   },
   {
     icon: BarChart3,
     title: "Scoring financiero, no sesgos",
-    description: "Tú apruebas por solvencia validada. Hommie se encarga del matching de convivencia. Sin sesgos, sin riesgo.",
+    description: "Tú apruebas por solvencia validada. Encaja se encarga del matching de convivencia. Sin sesgos, sin riesgo.",
   },
   {
     icon: Settings,
@@ -41,13 +41,13 @@ export function Propietarios() {
               Para propietarios
             </span>
             <h2 className="mt-4 text-[2.5rem] font-extrabold tracking-tight text-foreground md:text-[3rem] leading-[1.1]">
-              Nosotros pagamos.
-              <br />
-              <span className="font-display italic text-muted-foreground">Tú descansas.</span>
+              Tu piso ocupado, cobrado y{" "}
+              <span className="font-display italic text-muted-foreground">gestionado.</span>
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-md">
-              Gestionamos tu piso, filtramos inquilinos y te ofrecemos
-              un seguro de impago con primas que no encontrarás solo.
+              Gestionamos tu propiedad, filtramos inquilinos por solvencia
+              y te conectamos con un seguro de impago a primas que no
+              encontrarías solo.
             </p>
             <a
               href="#waitlist"

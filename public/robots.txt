@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hommie.ai/sitemap.xml
+Sitemap: https://encaja.es/sitemap.xml

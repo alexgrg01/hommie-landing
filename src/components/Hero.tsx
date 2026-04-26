@@ -250,9 +250,9 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            El sistema operativo del co-living. Gestión automatizada y seguro
-            de impago para el propietario. Matching por afinidad real y
-            onboarding digital para el inquilino. Busca gratis, vive mejor.
+            El sistema operativo del co-living. Cobro garantizado, gestión
+            100% digital y matching por afinidad real para tu piso compartido.
+            Inquilinos buscan gratis.
           </motion.p>
 
           <motion.div

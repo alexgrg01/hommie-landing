@@ -1,29 +1,29 @@
 import { motion } from "framer-motion"
-import { Video, Brain, ShieldCheck } from "lucide-react"
+import { Building2, Brain, ShieldCheck } from "lucide-react"
 
 const steps = [
   {
     num: "01",
-    tag: "APLICA",
-    title: "Graba tu video de 30 segundos",
+    tag: "PUBLICA",
+    title: "Sube tu propiedad en minutos",
     description:
-      "Olvídate de visitas y chats interminables. Crea tu perfil con una video-presentación rápida y verificamos tu identidad y solvencia automáticamente.",
-    icon: Video,
+      "Listas tu piso una sola vez. Encaja filtra candidatos por solvencia automáticamente y verifica identidad, nómina y referencias.",
+    icon: Building2,
   },
   {
     num: "02",
     tag: "MATCH",
-    title: "La IA agrupa por afinidad real",
+    title: "La IA agrupa inquilinos compatibles",
     description:
-      "Nuestro algoritmo analiza hábitos, horarios y estilo de vida para emparejarte con compañeros compatibles. No elige el propietario, elige la compatibilidad.",
+      "El algoritmo analiza hábitos, horarios y estilo de vida para emparejar inquilinos compatibles entre sí. Tú apruebas por scoring financiero — la convivencia la decide la afinidad.",
     icon: Brain,
   },
   {
     num: "03",
-    tag: "ENTRA",
-    title: "Onboarding 100% digital",
+    tag: "COBRA",
+    title: "Firma digital y cobros automatizados",
     description:
-      "Firma digital, cobros automatizados y seguro de impago integrado. El propietario cobra garantizado. Tú entras sin fricciones.",
+      "Contratos firmados digitalmente, cobros recurrentes y seguro de impago disponible como producto separado. Tú cobras cada mes; el inquilino entra sin fricciones.",
     icon: ShieldCheck,
   },
 ]

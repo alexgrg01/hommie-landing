@@ -1,4 +1,4 @@
-# Hommie Design System
+# Encaja Design System
 
 > Co-living PropTech. Madrid-first. Trust through restraint, warmth through typography.
 
@@ -6,7 +6,7 @@
 
 ## 1. Visual Theme & Atmosphere
 
-Hommie's design communicates **institutional trust with human warmth** — a platform that handles money, contracts, and insurance, yet facilitates living with other people. The aesthetic sits between Vercel's engineering precision and a residential warmth that generic SaaS lacks.
+Encaja's design communicates **institutional trust with human warmth** — a platform that handles money, contracts, and insurance, yet facilitates living with other people. The aesthetic sits between Vercel's engineering precision and a residential warmth that generic SaaS lacks.
 
 **Dual-surface architecture**: Dark hero/CTA sections (deep indigo-black) contrast with warm-neutral content sections (off-white with stone undertones). This alternation creates visual rhythm without relying on decorative elements.
 
@@ -201,7 +201,7 @@ These are atmospheric, never sharp. Opacity stays under 0.25. Animation is slow 
 - Position: fixed, full-width, z-50
 - Height: 64px
 - Transparent on dark hero; `bg-white/80 backdrop-blur-xl border-b border-border shadow-sm` after scroll
-- Logo: "Hommie." — 21px, weight 700, tracking-tight. Dot is `text-primary`
+- Logo: "Encaja." — 21px, weight 700, tracking-tight. Dot is `text-primary`
 - Links: 13px, weight 500, uppercase, tracking-wide
 - CTA: pill button (see above)
 
@@ -299,6 +299,10 @@ Footer      → light with border-t (#FAFAF8)
 - Don't use generic gray borders — borders are warm (`#E8E5E0`) on light, translucent white on dark
 - Don't center-align everything — left-align text in split layouts, center only waitlist/hero heading
 - Don't use the word "integrado" for the insurance — it's a separate product
+- Don't imply Encaja covers payment defaults directly — the impago coverage comes from the separate insurance product, not from Encaja itself
+- Don't communicate B2C premium upsells (priority matching, fast-track verification, deposit financing) in the public landing — premium is intentionally out of MVP and will be introduced post-launch
+- Don't use claim words ("Gratis", "Seguro", "IA") in metric formatting (large number + small label) — that pattern reads as fake metrics pre-launch. Use the pillars layout instead
+- Always state the management fee with a "desde 12%" floor when shown publicly — never as a single fixed number, never hidden entirely
 
 ---
 
