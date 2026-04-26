@@ -33,7 +33,7 @@ export function Navbar() {
             scrolled ? "text-foreground" : "text-white"
           }`}
         >
-          Hommie<span className="text-primary">.</span>
+          Encaja<span className="text-primary">.</span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">

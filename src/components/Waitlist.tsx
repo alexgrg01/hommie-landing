@@ -1,18 +1,10 @@
-import { useState } from "react"
 import { motion } from "framer-motion"
-import { ArrowRight, CheckCircle, Loader2 } from "lucide-react"
+import { ArrowRight } from "lucide-react"
+
+// TODO: reemplazar con la URL real del Google Form
+const GOOGLE_FORM_URL = "#"
 
 export function Waitlist() {
-  const [email, setEmail] = useState("")
-  const [state, setState] = useState<"idle" | "loading" | "success">("idle")
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!email) return
-    setState("loading")
-    setTimeout(() => setState("success"), 1200)
-  }
-
   return (
     <section
       id="waitlist"
@@ -48,52 +40,20 @@ export function Waitlist() {
           en Madrid.
         </h2>
         <p className="mt-4 text-lg text-slate-400">
-          Sé de los primeros. Déjanos tu email y te avisamos cuando lancemos.
+          Sé de los primeros. Apúntate y te avisamos cuando lancemos.
         </p>
 
-        {state === "success" ? (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="mt-10 flex flex-col items-center gap-3"
+        <div className="mt-10 flex justify-center">
+          <a
+            href={GOOGLE_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-indigo-600 px-8 text-sm font-semibold text-white shadow-lg shadow-indigo-600/25 transition-all hover:bg-indigo-500 hover:shadow-xl hover:shadow-indigo-600/30 active:scale-[0.97]"
           >
-            <CheckCircle className="h-10 w-10 text-emerald-400" />
-            <p className="text-lg font-semibold text-white">¡Estás dentro!</p>
-            <p className="text-sm text-slate-400">
-              Te escribiremos pronto. Bienvenido a Hommie.
-            </p>
-          </motion.div>
-        ) : (
-          <form
-            onSubmit={handleSubmit}
-            className="mt-10 flex flex-col gap-3 sm:flex-row sm:justify-center"
-          >
-            <label htmlFor="waitlist-email" className="sr-only">Tu email</label>
-            <input
-              id="waitlist-email"
-              type="email"
-              placeholder="tu@email.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="h-12 w-full rounded-xl border border-white/10 bg-white/[0.05] px-4 text-white placeholder:text-white/30 backdrop-blur-sm transition-colors focus:border-indigo-500/50 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 sm:w-80"
-            />
-            <button
-              type="submit"
-              disabled={state === "loading"}
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-indigo-600 px-6 text-sm font-semibold text-white shadow-lg shadow-indigo-600/25 transition-all hover:bg-indigo-500 hover:shadow-xl hover:shadow-indigo-600/30 active:scale-[0.97] disabled:opacity-60"
-            >
-              {state === "loading" ? (
-                <Loader2 className="h-4 w-4 animate-spin" />
-              ) : (
-                <>
-                  Quiero entrar
-                  <ArrowRight className="h-4 w-4" />
-                </>
-              )}
-            </button>
-          </form>
-        )}
+            Apuntarme a la waitlist
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </a>
+        </div>
       </motion.div>
     </section>
   )
